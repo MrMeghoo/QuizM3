@@ -1,17 +1,18 @@
 import { useGlobalContext } from "../Info/Info";
 
+
 const Form = () => {
   const { quiz, handleChange, handleSubmit, error } = useGlobalContext();
   return (
-    <main>
+     <main>
       <section className="quiz quiz-small">
         <form className="setup-form">
           <h2>setup quiz</h2>
           <div className="form-control">
             <label htmlFor="amount">number of questions</label>
             <input
-              type="number"
-              name="amount"
+             type="number"
+            name="amount"
               id="amount"
               value={quiz.amount}
               onChange={handleChange}

@@ -1,4 +1,6 @@
 import { useGlobalContext } from "../Info/Info";
+
+
 const Modal = () => {
   const { modal, closeModal, correct, questions } = useGlobalContext();
   return (
