@@ -1,13 +1,11 @@
 import React from "react";
-import Form from "./Form/Form.jsx";
-import Loading from "./Load/Loading.jsx";
-import Modal from "./Modal/Modal.jsx";
-import { useGlobalContext } from "./Info/Info.jsx";
-
+import Form from "./Form/Form";
+import Loading from "./Load/Loading";
+import Modal from "./Modal/Modal";
+import { useGlobalContext } from "./Info/Info";
 
 function App() {
-  const {waiting,loading,questions,index,correct,nextQuestions,checkAnswers,
-  } = useGlobalContext();
+  const { waiting, loading, questions, index, correct, nextQuestions, checkAnswers } = useGlobalContext();
 
   if (waiting) {
     return <Form />;
