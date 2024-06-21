@@ -44,9 +44,9 @@ function App() {
         <article className="container">
           <h2>{question}</h2>
           <div className="btn-container">
-            {answers.map((answer, idx) => (
+            {answers.map((answer) => (
               <button
-              key={idx}
+              key={answer}
               className="answer-btn"
               onClick={() => checkAnswer(answer)}
               >
